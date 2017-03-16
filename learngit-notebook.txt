@@ -1,0 +1,31 @@
+$ git config --global user.name "username"
+$ git config --global user.email "email"
+$ mkdir dirname
+$ cd dirname 
+$ pwd
+$ git init
+$ git add *.*
+$ git commit -m "log words"
+$ git status 
+$ git diff *.*
+$ git log 
+$ git log --pretty=oneline
+$ cat *.*
+$ git reset --hard HEAD^
+$ git reset --hard HEAD^^
+$ git reset --hard HEAD~100
+$ git reset --hard daf9af3
+$ git reflog
+$ git checkout -- *.*	//让这个文件回到最近一次git commit或git add时的状态； git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+$ git reset HEAD *.*	//暂存区的修改回退到工作区; HEAD表示最新的版本
+$ rm *.* 				//删除某个文件
+$ git rm *.*			//从版本库删除某个文件
+
+
+/**
+*Git-远程仓库
+*
+*/
+$ git remote add origin git@github.com:zmayor/learnGit.git
+$ git push -u master 
+$ git push master 
