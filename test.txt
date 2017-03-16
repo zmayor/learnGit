@@ -1,2 +1,2 @@
 this is test.txt
-git is a free software.
+git is a free distributed version control software.
