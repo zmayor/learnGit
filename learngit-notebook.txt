@@ -29,3 +29,17 @@ $ git rm *.*			//从版本库删除某个文件
 $ git remote add origin git@github.com:zmayor/learnGit.git
 $ git push -u master 
 $ git push master 
+
+$ git checkout -b dev 	//创建并切换新分支
+	equal {
+		$ git branch dev
+		$ git checkout dev //切换到dev分支
+	}
+$ git branch 			//查看当前分支
+$ git merge dev 		//将指定分支合并到当前分支 Fast-forward
+$ git branch -d dev		//删除dev分支
+
+$ git stash				//把未提交的工作暂存起来
+$ git stash apply		//恢复stash内容
+--> $git stash drop 	//删除stash存档
+$ git stash pop 		//恢复内容并删除存档
